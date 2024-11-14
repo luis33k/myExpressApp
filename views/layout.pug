@@ -1,0 +1,57 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  meta(name='author' content='Expres my live demo')
+  meta(name='description' content='Express.js live demo luis gornes')
+  meta(name='keywords' content='Express, js, javascript, html, css, demo')
+  link(rel='icon' href='/images/express-js.png' type='image/png')
+  link(rel='stylesheet' type='text/css' href='/stylesheets/style.css')
+  script.
+    function toggleMenu() {
+      const menu = document.querySelector(".menu-links");
+      const logo = document.querySelector(".dropdown-logo");
+      menu.classList.toggle("open");
+      logo.classList.toggle("open");
+    }  
+title My Express App Demo
+nav#desktop-nav
+  .logo
+    img.logo-img(src='/images/express-js.png' alt='Express Logo')
+  div
+    ul.nav-links
+      li
+        a(href='/' onclick='toggleMenu()') Home
+      li
+        a(href='/about' onclick='toggleMenu()') About
+      li
+        a(href='/contact' onclick='toggleMenu()') Contact
+nav#dropdown-nav
+  .logo
+    img.logo-img(src='/images/express-js.png' alt='Express Logo')
+  .dropdown-menu
+    .dropdown-logo(onclick='toggleMenu()')
+      // lines for drop down menu
+      span
+      span
+      span
+    .menu-links
+      ul
+        li
+          a(href='/' onclick='toggleMenu()') Home
+        li
+          a(href='/about' onclick='toggleMenu()') About
+        li
+          a(href='/contact' onclick='toggleMenu()') Contact
+block content
+footer
+  nav
+    .nav-links-container
+      ul.nav-links
+        li
+          a(href='/') Home
+        li
+          a(href='/about') About
+        li
+          a(href='/contact') Contact
+  p Copyright &copy; 2024 Luis Gornes. Express Demo.
