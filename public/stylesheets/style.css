@@ -97,6 +97,7 @@ a:hover {
   background-color: white;
   width: fit-content;
   max-height: 0;
+  z-index: 1000;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
 }
