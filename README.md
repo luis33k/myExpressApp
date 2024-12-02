@@ -25,13 +25,13 @@ cd myExpressApp
 npm install
 ```
 
-### Step 4: Run your app in dev mode
+### Step 4: Run & view website locally!
 
 ```
 npm start
 ```
 
-### Step 5: Make some changes and push
+### Step 5: Make some changes
 Try to make some change in your views/index.pug
 
 After few secondes to few minutes your change will be deployed remeber to start and stop while making changes 🚀
