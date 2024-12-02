@@ -11,7 +11,7 @@ I created a multi-page website with different routes, and applied styling to mak
 ### Step 1: Clone this repository
 
 ```
-git clone https://github.com/luis33k/myExpressApp
+git clone https://github.com/luis33k/myExpressApp.git
 ```
 ### Step 2: Go to project folder
 
